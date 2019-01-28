@@ -68,9 +68,45 @@
 
     <div class="container-fluid">
       <div class="row no-gutters">
-        <div class="col-4" id="p1data">p1data</div>
-        <div class="col-4" id="text">text</div>
-        <div class="col-4" id="p2data">p2data</div>
+        <div class="col-3" id="p1data">p1data
+          <form id="p1login">
+              <input type="text" class="form-control" id="input-p1login" placeholder="Enter your name">
+              <button type="submit" class="btn btn-secondary" id="btn-p1login">Log in</button>
+          </form>
+        </div>
+
+        <div class="col-6" id="text">
+          <table class="table table-sm table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Smack Talk Area</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-3" id="p2data">p2data
+          <form id="p2login">
+              <input type="text" class="form-control" id="input-p2login" placeholder="Enter your name">
+              <button type="submit" class="btn btn-secondary" id="btn-p2login">Log in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <form id="chatinput">
+              <input type="text" class="form-control" id="input-chat" placeholder="Chat!">
+              <button type="submit" class="btn btn-secondary" id="btn-send">Send</button>
+          </form>
+        </div>
+        <div class="col-3"></div>
       </div>
     </div>
 

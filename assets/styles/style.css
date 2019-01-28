@@ -62,8 +62,46 @@ img:hover {
     cursor: pointer;
 }
 
-#p1data, #text, #p2data {
+#p1data, #p2data {
     border: solid black 1px;
-    height: 200px;
+    height: 214px;
+    margin-top: 41px;
+    padding-top: 20px;
+}
+
+#text {
     margin-top: 5px;
+    height: 250px;
+    border: solid rgb(0, 153, 255) 1px;
+    overflow: auto;
+}
+
+#chatinput {
+    position: relative;
+}
+
+#input-chat {
+    width: 94%;
+    left: 5px;
+}
+
+#btn-send {
+    position: relative;
+    left: 389px;
+    bottom: 38px;
+}
+
+#p1login, #p2login {
+    position: relative;
+    top: 131px;
+}
+
+#input-p1login, #input-p2login {
+    width: 84%;
+}
+
+#btn-p1login, #btn-p2login {
+    position: relative;
+    left: 174px;
+    bottom: 38px;
 }
