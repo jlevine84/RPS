@@ -1,9 +1,79 @@
 <!doctype html>
 <html>
   <head>
-    <title></title>
+    <title>Rock Paper Scissors Lizard Spock</title>
+    <link rel="icon" type="image/png" href="http://jlevine84.github.io/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="assets/javascript/RPS.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script> 
   </head>
   
   <body>
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-2"></div>
+        <div class="col-8" id="title">Rock, Paper, Scissors, Lizard, Spock!</div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-1"></div>
+        <div class="col-2" id="p1">P1</div>
+        <div class="col-1"></div>
+        <div class="col-4" id="inst">"Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors." - Sheldon Cooper</div>
+        <div class="col-1"></div>
+        <div class="col-2" id="p2">P2</div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row no-gutters">
+
+        <div class="col-3" id="p1images">
+          <div class="row no-gutters">
+            <div class="col"><img src="assets/images/Rock.jpg" data-name="rock"></div>
+            <div class="col"><img src="assets/images/Paper.jpg" data-name="paper"></div>
+            <div class="w-100"></div>
+            <div class="col"><img src="assets/images/Lizard.jpg" data-name="lizard"></div>
+            <div class="col"><img src="assets/images/Scissors.jpg" data-name="scissors"></div>
+            <div class="w-100"></div>
+            <div class="col"><img src="assets/images/Spock.jpg" data-name="spock"></div>
+          </div>
+        </div>
+
+        <div class="col-4" id="game-display">game-display</div>
+
+        <div class="col-3" id="p2images">
+          <div class="row no-gutters">
+            <div class="col"><img src="assets/images/Rock.jpg" data-name="rock"></div>
+            <div class="col"><img src="assets/images/Paper.jpg" data-name="paper"></div>
+            <div class="w-100"></div>
+            <div class="col"><img src="assets/images/Lizard.jpg" data-name="lizard"></div>
+            <div class="col"><img src="assets/images/Scissors.jpg" data-name="scissors"></div>
+            <div class="w-100"></div>
+            <div class="col"><img src="assets/images/Spock.jpg" data-name="spock"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-4" id="p1data">p1data</div>
+        <div class="col-4" id="text">text</div>
+        <div class="col-4" id="p2data">p2data</div>
+      </div>
+    </div>
+
   </body>
+
 </html>
